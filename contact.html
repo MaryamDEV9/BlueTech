@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class=" transition duration-300">
+    <!-- Navbar -->
+    <nav class="bg-white/20 backdrop-blur-md shadow-md p-2 fixed w-full top-0 left-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2 text-blue-700 font-bold text-xl">
+                <i class="fa-solid fa-globe"></i>
+                <span>BlueTech</span>
+            </div>
+            <!-- Links -->
+            <ul class="hidden md:flex gap-8 font-medium ">
+                <li><a href="index.html" class="hover:text-blue-400 ">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+                <li><a href="service.html" class="hover:text-blue-400">Services</a></li>
+                <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+                <li><a href="contact.html" class="hover:text-blue-400 underline decoration-4  decoration-black:decoration-blue-400">Contact</a></li>
+            </ul>
+            <!-- Right Side -->
+            <div class="flex items-center gap-4">
+                <!-- Action Button -->
+                <button class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-500">
+                Get Started
+                </button>
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-xl">
+                <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 hover:text-blue-400">Home</a>
+            <a href="about.html" class="block py-2 hover:text-blue-400">About</a>
+            <a href="service.html" class="block py-2 hover:text-blue-400 ">Services</a>
+            <a href="projects.html" class="block py-2 hover:text-blue-400">Projects</a>
+            <a href="contact.html" class="block py-2 hover:text-blue-400 underline decoration-4  decoration-black:decoration-blue-400">Contact</a>
+        </div>
+    </nav>
+    <div class="flex justify-center mt-20 w-full min-h-screen bg-gray-100">
+        <div class="hero lg:w-[700px] w-full px-4 pt-20 text-center">
+            <span class="border border-blue-400 text-blue-700 hover:bg-blue-600 hover:text-white px-4 py-1 rounded-full">
+                Contact Support & Sales
+            </span>
+            <h1 class="font-extrabold mt-7 lg:text-5xl md:text-4xl text-4xl">
+                Let's Start a <span class="text-blue-600">Conversation</span>
+            </h1>
+            <p class="text-gray-500 max-w-[600px] mx-auto mt-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit consequuntur vitae dignissimos tenetur. Nemo qui nulla dicta corporis quam eaque amet dolore eos dolores facere eius fugit laboriosam temporibus atque labore, repudiandae adipisci mollitia totam vitae aliquid dolorum dolor. Ab.
+            </p>
+        </div>
+    </div>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- FORM -->
+        <div class="lg:col-span-2 bg-white p-5 md:p-8 rounded-2xl shadow-sm">
+            <h2 class="text-xl md:text-2xl font-semibold mb-2">Send us a Message</h2>
+            <p class="text-gray-500 text-sm mb-6">
+              Fill out the form and we’ll get back to you within 24 hours.
+            </p>
+            <form id="contactForm" class="space-y-4">
+              <!-- Names -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <input id="firstName" type="text" placeholder="First Name"
+                    class="input w-full border p-3 rounded-lg outline-none">
+                  <p class="error text-red-500 text-sm hidden">Required</p>
+                </div>
+                <div>
+                  <input id="lastName" type="text" placeholder="Last Name"
+                    class="input w-full border p-3 rounded-lg outline-none">
+                  <p class="error text-red-500 text-sm hidden">Required</p>
+                </div>
+              </div>
+              <!-- Email -->
+              <div>
+                <div class="relative">
+                  <i class="fa fa-envelope absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+                  <input id="email" type="email" placeholder="Business Email"
+                    class="input w-full border pl-10 p-3 rounded-lg outline-none">
+                </div>
+                <p class="error text-red-500 text-sm hidden">Invalid email</p>
+              </div>
+              <!-- Subject -->
+              <div>
+                <input id="subject" type="text" placeholder="Subject"
+                  class="input w-full border p-3 rounded-lg outline-none">
+                <p class="error text-red-500 text-sm hidden">Required</p>
+              </div>
+              <!-- Message -->
+              <div>
+                <textarea id="message" rows="5" placeholder="How can we help?"
+                  class="input w-full border p-3 rounded-lg outline-none"></textarea>
+                <p class="error text-red-500 text-sm hidden">Min 10 characters</p>
+              </div>
+              <!-- Button -->
+              <button
+                class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg flex items-center justify-center gap-2">
+                <i class="fa fa-paper-plane"></i>
+                Send Message
+              </button>
+              <p class="text-xs text-gray-500 flex items-center gap-2">
+                <i class="fa fa-clock"></i>
+                Monday - Friday, 9:00 AM - 6:00 PM
+              </p>
+            </form>
+        </div>
+        <!-- SIDE -->
+        <div class="space-y-6">
+          <!-- Contact -->
+          <div class="bg-white p-5 rounded-2xl shadow-sm">
+            <h3 class="font-semibold mb-4">Contact Details</h3>
+            <div class="space-y-4 text-sm">
+              <div class="flex items-start gap-3">
+                <i class="fa fa-envelope text-blue-600 mt-1"></i>
+                <div>
+                  <p class="font-medium">Email Us</p>
+                  <p class="text-gray-500">contact@bluetech.com</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fa fa-phone text-blue-600 mt-1"></i>
+                <div>
+                  <p class="font-medium">Call Us</p>
+                  <p class="text-gray-500">+1 (555) 000-BLUE</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <i class="fa fa-location-dot text-blue-600 mt-1"></i>
+                <div>
+                  <p class="font-medium">Headquarters</p>
+                  <p class="text-gray-500">123 Azure Way, Sky City</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Social -->
+          <div class="bg-white p-5 rounded-2xl shadow-sm">
+            <h3 class="font-semibold mb-4">Join the Community</h3>
+            <div class="grid grid-cols-4 gap-3 text-center">
+              <a href="#" class="border rounded-lg p-3 hover:bg-blue-50">
+                <i class="fab fa-linkedin text-blue-600"></i>
+              </a>
+              <a href="#" class="border rounded-lg p-3 hover:bg-blue-50">
+                <i class="fab fa-twitter text-blue-400"></i>
+              </a>
+              <a href="#" class="border rounded-lg p-3 hover:bg-blue-50">
+                <i class="fab fa-facebook text-blue-700"></i>
+              </a>
+              <a href="#" class="border rounded-lg p-3 hover:bg-blue-50">
+                <i class="fab fa-instagram text-pink-500"></i>
+              </a>
+            </div>
+          </div>
+          <!-- Map -->
+          <div class="bg-white p-5 rounded-2xl shadow-sm">
+            <h3 class="font-semibold mb-4 flex justify-between items-center">
+              Find Us
+              <a href="#" class="text-blue-600 text-sm flex items-center gap-1">
+                <i class="fa fa-location-arrow"></i> Directions
+              </a>
+            </h3>
+            <div class="rounded-xl overflow-hidden">
+              <iframe
+                src="https://maps.google.com/maps?q=cairo&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                class="w-full h-48 md:h-56 border-0">
+              </iframe>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- VALIDATION -->
+    <script>
+    const form = document.getElementById("contactForm");
+    const inputs = document.querySelectorAll(".input");
+    function showError(input, message) {
+      const error = input.parentElement.querySelector(".error");
+      error.textContent = message;
+      error.classList.remove("hidden");
+      input.classList.add("border-red-500");
+      input.classList.remove("border-green-500");
+    }
+    function showSuccess(input) {
+      const error = input.parentElement.querySelector(".error");
+      error.classList.add("hidden");
+      input.classList.remove("border-red-500");
+      input.classList.add("border-green-500");
+    }
+    function validateEmail(email) {
+      return /^[^ ]+@[^ ]+\.[a-z]{2,3}$/.test(email);
+    }
+    function validateInput(input) {
+      const id = input.id;
+      const value = input.value.trim();
+      if (id === "firstName" || id === "lastName" || id === "subject") {
+        if (value === "") {
+          showError(input, "Required field");
+          return false;
+        } else {
+          showSuccess(input);
+          return true;
+        }
+      }
+      if (id === "email") {
+        if (!validateEmail(value)) {
+          showError(input, "Invalid email");
+          return false;
+        } else {
+          showSuccess(input);
+          return true;
+        }
+      }
+      if (id === "message") {
+        if (value.length < 10) {
+          showError(input, "At least 10 characters");
+          return false;
+        } else {
+          showSuccess(input);
+          return true;
+        }
+      }
+    }
+    inputs.forEach(input => {
+      input.addEventListener("input", () => validateInput(input));
+    });
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      let valid = true;
+      inputs.forEach(input => {
+        if (!validateInput(input)) valid = false;
+      });
+      if (valid) {
+        alert("Message sent successfully ✅");
+        form.reset();
+        inputs.forEach(i => i.classList.remove("border-green-500"));
+      }
+    });
+    </script>
+    <footer class="bg-gray-100 py-10 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+        <!-- Column 1 -->
+        <div>
+          <div class="text-blue-700 font-bold text-xl">
+            <i class="fa-solid fa-globe"></i>
+            <span>BlueTech</span>
+          </div>
+          <p class="text-gray-400">
+          We provide modern technology solutions to help your business grow and succeed.
+          </p>
+         </div>
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-blue-500 font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">Services</a></li>
+            <li><a href="projects.html" class="hover:text-blue-400 ">Projects</a></li>
+            <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-blue-500 font-semibold mb-4">Services</h3>
+          <ul class="space-y-2">
+            <li><a href="service.html" class="hover:text-blue-400">Web Development</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">Cloud Solutions</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">Cyber Security</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">AI Solutions</a></li>
+            <li><a href="projects.html" class="hover:text-blue-400">Our Prtoflio</a></li>
+
+          </ul>
+        </div>
+        <!-- Column 4 -->
+        <div>
+          <h3 class="text-blue-500 font-semibold mb-4">Contact</h3>
+          <p>Email: info@bluetech.com</p>
+          <p>Phone: +20 123 456 789</p>
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-4 text-xl">
+            <i class="fa-brands fa-facebook hover:text-blue-500"></i>
+            <i class="fa-brands fa-instagram hover:text-pink-400"></i>
+            <i class="fa-brands fa-twitter hover:text-blue-500"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="text-center text-gray-500 mt-8">
+        © 2026 BlueTech. All rights reserved.
+      </div>
+    </footer>
+    <script>
+        // mobile menu
+        const menuBtn = document.getElementById("menuBtn")
+        const mobileMenu = document.getElementById("mobileMenu")
+        menuBtn.onclick = () => {
+        mobileMenu.classList.toggle("hidden")
+        }
+    </script>
+    <!-- زرار Scroll to Top -->
+    <button id="scrollTopBtn" class="fixed bottom-5 right-5 bg-blue-700 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition hidden z-50">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = () => {
+          if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            scrollBtn.classList.remove("hidden");
+          } else {
+            scrollBtn.classList.add("hidden");
+          }
+        };
+        scrollBtn.onclick = () => {
+          window.scrollTo({top:0, behavior:"smooth"});
+        };
+    </script>
+</body>
+</html>

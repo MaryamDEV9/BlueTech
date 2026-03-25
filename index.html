@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class=" transition duration-300">
+    <!-- Navbar -->
+    <nav class="bg-white/20 backdrop-blur-md shadow-md p-2 fixed w-full top-0 left-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2 text-blue-700 font-bold text-xl">
+                <i class="fa-solid fa-globe"></i>
+                <span>BlueTech</span>
+            </div>
+            <!-- Links -->
+            <ul class="hidden md:flex gap-8 font-medium ">
+                <li><a href="index.html" class="hover:text-blue-400 underline decoration-4  decoration-black:decoration-blue-400">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+                <li><a href="service.html" class="hover:text-blue-400">Services</a></li>
+                <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+                <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+            </ul>
+            <!-- Right Side -->
+            <div class="flex items-center gap-4">
+                <!-- Action Button -->
+                <a href="contact.html" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-500">
+                Get Started
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-xl">
+                <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 hover:text-blue-400 underline decoration-blue-500">Home</a>
+            <a href="about.html" class="block py-2 hover:text-blue-400">About</a>
+            <a href="service.html" class="block py-2 hover:text-blue-400 ">Services</a>
+            <a href="projects.html" class="block py-2 hover:text-blue-400">Projects</a>
+            <a href="contact.html" class="block py-2 hover:text-blue-400">Contact</a>
+        </div>
+    </nav>
+    <div class="hero lg:m-[60px] m-[20px] lg:w-[700px] sm:m-[10px] lg:m-[60px] m-[20px] pt-20">
+        <span class="border border-blue-400 text-blue-700 hover:bg-blue-600 hover:text-white px-4 py-1 rounded-full">
+            Next-Gen Technolgy Solutions
+        </span>
+        <div>
+            <div>
+                <h1 class="font-extrabold text-5xl dark:text-white  mt-[20px] mb-[20px]">Innovative Solutions For a <span class="text-blue-700">Digital World</span></h1>
+                <p class="text-gray-400 dark:text-gray-300">Technology solutions help businesses and people solve problems using digital tools. They include software, websites, cloud services, and automation. These solutions improve productivity, communication, and security while making tasks faster, smarter, and more efficient.</p>
+                <div class="flex flex-col sm:flex-row gap-4 mt-[13px]">
+                    <!-- Get Started -->
+                    <a href="contact.html" class="flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition">
+                    <i class="fa-solid fa-rocket"></i>
+                    Get Started
+                    </a>
+                    <!-- Our Story -->
+                    <a  href="about.html" class="flex items-center justify-center gap-2 border border-blue-700 text-blue-500 hover:bg-blue-50 dark:hover:bg-gray-800 px-6 py-3 rounded-full transition">
+                    <i class="fa-solid fa-book-open"></i>
+                    Our Story
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="lg:mt-[30px] text-center bg-gray-100 p-7">
+        <h2 class="font-bold text-4xl">Our Core Expertise</h2>
+        <div class="border-t-4 border-blue-600 w-20 mx-auto my-4"></div>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+                <i class="fa-solid fa-code text-blue-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Web Development</h3>
+                <p class="text-gray-600 mb-4">
+                We build modern and responsive websites using the latest technologies.
+                </p>
+                <a href="service.html" class="text-blue-600 font-semibold hover:underline">
+                Learn More
+                </a>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+                <i class="fa-solid fa-cloud text-blue-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Cloud Solutions</h3>
+                <p class="text-gray-600 mb-4">
+                Secure and scalable cloud services to support your business growth.
+                </p>
+                <a href="service.html" class="text-blue-600 font-semibold hover:underline">
+                Learn More
+                </a>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white shadow-lg rounded-xl p-6 text-center">
+                <i class="fa-solid fa-shield-halved text-blue-600 text-3xl mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">Cyber Security</h3>
+                <p class="text-gray-600 mb-4">
+                Protect your systems and data with advanced security solutions.
+                </p>
+                <a href="service.html" class="text-blue-600 font-semibold hover:underline">
+                Learn More
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <section class="p-20">
+        <h2 class="font-bold text-4xl mb-[20px]">Featured Projects</h2>
+        <div class="lg:flex items-center justify-between  ">
+            <p class="text-gray-500">Take a look at some our most impactiful work deliverd for industry leaders worldwide .</p>
+            <button class="border border-blue-700 text-blue-700 px-3 py-2 rounded-full hover:bg-blue-700 hover:text-white transition">
+                View all projects
+            </button>
+        </div>
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class="relative rounded-xl overflow-hidden group">
+              <img src="images/gempages_487642277401854988-8837ef3c-1052-4a8f-a5d4-2b1c6c2a89c6.webp" class="w-full h-64 object-cover">
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <p class="text-white text-xl font-bold">
+                  CyberGraud Enterpricing
+                </p>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="relative rounded-xl overflow-hidden group">
+              <img src="images/smartphone-app-3d-render-of-apps-on-blue-background_9749465.jpg!w700wp" class="w-full h-64 object-cover">
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+                <p class="text-white text-xl font-bold">
+                  Global FinTech Hub
+                </p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="p-20 bg-gray-100 text-center">
+        <span class="border border-blue-400 text-blue-700 hover:bg-blue-600 hover:text-white px-4 py-1 rounded-full">
+            Testimionials
+        </span>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 p-6">
+            <!-- Card 1 -->
+            <div class="bg-white shadow-lg rounded-xl p-6">
+            
+              <!-- Stars -->
+              <div class="text-yellow-400 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            
+              <!-- Description -->
+              <p class="text-gray-600 mb-4">
+                This service is amazing! It helped me improve my business and save a lot of time.
+              </p>
+            
+              <!-- User -->
+              <div class="flex items-center gap-3">
+                <img src="images/premium_photo-1690407617542-2f210cf20d7e.avif" class="w-12 h-12 rounded-full object-cover">
+                <span class="font-semibold">Noha Ahmed</span>
+              </div>
+            
+            </div>
+        
+            <!-- Card 2 -->
+            <div class="bg-white shadow-lg rounded-xl p-6">
+            
+              <!-- Stars -->
+              <div class="text-yellow-400 mb-3">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+            
+              <!-- Description -->
+              <p class="text-gray-600 mb-4">
+                Great experience! The team is professional and the results are outstanding.
+              </p>
+              <!-- User -->
+              <div class="flex items-center gap-3">
+                <img src="images/young-bearded-man-with-striped-shirt_273609-5677.avif" class="w-12 h-12 rounded-full object-cover">
+                <span class="font-semibold">Mohamed Nour</span>
+              </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-blue-600 text-white py-12 px-6 rounded-2xl mx-6 md:mx-20 my-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <!-- Title -->
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">
+          Ready to Build Something Amazing ?
+        </h2>
+        <!-- Paragraph -->
+        <p class="text-blue-100 mb-6">
+          Join us today and discover powerful technology solutions that will help you grow your business faster and smarter.
+        </p>
+        <!-- Button -->
+        <a href="" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+          Contact Us
+        </a>
+      </div>
+    </section>
+    <footer class="bg-gray-100 py-10 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+        <!-- Column 1 -->
+        <div>
+          <div class="text-blue-700 font-bold text-xl">
+            <i class="fa-solid fa-globe"></i>
+            <span>BlueTech</span>
+          </div>
+          <p class="text-gray-400">
+          We provide modern technology solutions to help your business grow and succeed.
+          </p>
+         </div>
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-blue-500 font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">Services</a></li>
+            <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+            <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-blue-500 font-semibold mb-4">Services</h3>
+          <ul class="space-y-2">
+            <li><a href="service.html" class="hover:text-blue-400">Web Development</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">Cloud Solutions</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">Cyber Security</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">AI Solutions</a></li>
+            <li><a href="projects.html" class="hover:text-blue-400">Our Prtoflio</a></li>
+
+          </ul>
+        </div>
+      
+        <!-- Column 4 -->
+        <div>
+          <h3 class="text-blue-500 font-semibold mb-4">Contact</h3>
+          <p>Email: info@bluetech.com</p>
+          <p>Phone: +20 123 456 789</p>
+        
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-4 text-xl">
+            <i class="fa-brands fa-facebook hover:text-blue-500"></i>
+            <i class="fa-brands fa-instagram hover:text-pink-400"></i>
+            <i class="fa-brands fa-twitter hover:text-blue-500"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="text-center text-gray-500 mt-8">
+        © 2026 BlueTech. All rights reserved.
+      </div>
+    </footer>
+    <script>
+        // mobile menu
+        const menuBtn = document.getElementById("menuBtn")
+        const mobileMenu = document.getElementById("mobileMenu")
+        
+        menuBtn.onclick = () => {
+        mobileMenu.classList.toggle("hidden")
+        }
+    </script>
+    <!-- زرار Scroll to Top -->
+    <button id="scrollTopBtn" class="fixed bottom-5 right-5 bg-blue-700 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition hidden z-50">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = () => {
+          if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            scrollBtn.classList.remove("hidden");
+          } else {
+            scrollBtn.classList.add("hidden");
+          }
+        };
+        scrollBtn.onclick = () => {
+          window.scrollTo({top:0, behavior:"smooth"});
+        };
+    </script>
+</body>
+</html>

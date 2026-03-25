@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class=" transition duration-300">
+    <!-- Navbar -->
+    <nav class="bg-white/20 backdrop-blur-md shadow-md p-2 fixed w-full top-0 left-0 z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center gap-2 text-blue-700 font-bold text-xl">
+                <i class="fa-solid fa-globe"></i>
+                <span>BlueTech</span>
+            </div>
+            <!-- Links -->
+            <ul class="hidden md:flex gap-8 font-medium ">
+                <li><a href="index.html" class="hover:text-blue-400 ">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-400 underline decoration-4  decoration-black:decoration-blue-400">About</a></li>
+                <li><a href="service.html" class="hover:text-blue-400">Services</a></li>
+                <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+                <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+            </ul>
+            <!-- Right Side -->
+            <div class="flex items-center gap-4">
+                <!-- Action Button -->
+                <a href="contact.html" class="bg-blue-700 text-white px-4 py-2 rounded-lg hover:bg-blue-500">
+                Get Started
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="md:hidden text-xl">
+                <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-6 pb-4">
+            <a href="index.html" class="block py-2 hover:text-blue-400 ">Home</a>
+            <a href="about.html" class="block py-2 hover:text-blue-400 underline decoration-blue-500">About</a>
+            <a href="service.html" class="block py-2 hover:text-blue-400 ">Services</a>
+            <a href="projects.html" class="block py-2 hover:text-blue-400">Projects</a>
+            <a href="contact.html" class="block py-2 hover:text-blue-400">Contact</a>
+        </div>
+    </nav>
+    <section class="lg:m-[60px] m-[20px] lg:w-[700px] sm:m-[10px] lg:m-[60px] m-[20px] pt-20">
+        <span class="border border-blue-400 text-blue-700 hover:bg-blue-600 hover:text-white px-4 py-1 rounded-full">
+           Our Journary
+        </span>
+        <div class="w-full ">
+            <!-- Text -->
+            <div class="flex flex-col justify-center px-6 md:px-12 py-10 ">
+              <h2 class="lg:text-5xl md:text-4xl text-3xl font-bold mb-6 leading-tight">
+                Crafting the Future of 
+                <span class="text-blue-700">Digital Excellence</span> 
+                Since 2012
+              </h2>
+          
+              <p class="text-gray-600 mb-6">
+                We provide modern and smart technology solutions to help businesses grow. 
+                Our services include web development, cloud computing, and advanced security systems 
+                designed to improve efficiency and performance.
+              </p>
+                <div class="max-w-4xl flex flex-col sm:flex-row justify-center items-center text-center gap-6 py-10">
+                    <!-- Item 1 -->
+                    <div class="flex flex-col items-center">
+                      <span class="text-4xl font-bold text-blue-600">150+</span>
+                      <span class="text-gray-600 mt-1">Projects</span>
+                    </div>
+                    <!-- Divider -->
+                    <div class="hidden sm:block w-px bg-gray-300 h-12"></div>
+                    <!-- Item 2 -->
+                    <div class="flex flex-col items-center">
+                      <span class="text-4xl font-bold text-blue-600">300+</span>
+                      <span class="text-gray-600 mt-1">Clients</span>
+                    </div>
+                    <!-- Divider -->
+                    <div class="hidden sm:block w-px bg-gray-300 h-12"></div>
+                    <!-- Item 3 -->
+                    <div class="flex flex-col items-center">
+                      <span class="text-4xl font-bold text-blue-600">12</span>
+                      <span class="text-gray-600 mt-1">Global Awards</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-100 text-center ">
+      <h2 class="lg:text-3xl md:text-2xl text-xl font-bold mb-6 leading-tight mt-[30px] p-4">Purpose Driven. Result Oriented.</h2>
+      <p class="text-gray-600">Our value are the compass that guides every line of code we woite and every startegy we develop.</p>
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 p-6">
+        <!-- Mission -->
+        <div class="bg-white rounded-xl p-6 border-t-4 border-blue-600 shadow-sm">
+          <!-- Icon -->
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-600 rounded-lg mb-4">
+            <i class="fa-solid fa-bullseye"></i>
+          </div>
+          <!-- Title -->
+          <h3 class="text-xl font-bold mb-3">Our Mission</h3>
+          <!-- Description -->
+          <p class="text-gray-600 mb-4">
+            To provide world-class technical expertise and innovative solutions that solve real-world business challenges. 
+            We strive for technical perfection while maintaining the human touch that makes a partnership successful.
+          </p>
+          <!-- List -->
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-angle-right text-blue-600"></i>
+              Uncompromising Quality
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-angle-right text-blue-600"></i>
+              Transparent Communication
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-angle-right text-blue-600"></i>
+              Client-Centric Approach
+            </li>
+          </ul>
+        </div>
+        <!-- Vision -->
+        <div class="bg-white rounded-xl p-6 border-t-4 border-blue-400 shadow-sm">
+          <!-- Icon -->
+          <div class="w-12 h-12 flex items-center justify-center bg-blue-100 text-blue-600 rounded-lg mb-4">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <!-- Title -->
+          <h3 class="text-xl font-bold mb-3">Our Vision</h3>
+          <!-- Description -->
+          <p class="text-gray-600 mb-4">
+            To be the global benchmark for digital transformation, where businesses of all sizes can access the same 
+            high-tier engineering excellence once reserved for the Fortune 500. We envision a smarter, safer digital world.
+          </p>
+          <!-- List -->
+          <ul class="space-y-2 text-gray-600">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-angle-right text-blue-600"></i>
+              Innovation Advocacy
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-angle-right text-blue-600"></i>
+              Global Scalability
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-angle-right text-blue-600"></i>
+              Sustainable Growth
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="lg:m-[60px] m-[20px] lg:w-[700px] sm:m-[10px] lg:m-[60px] m-[20px] pt-20">
+      <span class="border border-blue-400 text-blue-700 hover:bg-blue-600 hover:text-white px-4 py-1 rounded-full">
+        Our People
+      </span>
+      <h2 class="lg:text-4xl md:text-2xl text-xl font-bold mb-6 leading-tight mt-[30px] p-4">Meet the Experts</h2>
+      <div class="flex flex-col lg:flex-row justify-between items-center gap-4 w-full p-6 rounded-xl">
+        <!-- Text -->
+        <p class="text-gray-600 text-center lg:text-left max-w-xl">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque provident temporibus ea nihil facilis pariatur?
+        </p>
+        <!-- Button -->
+        <a href="contact.html" class="flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-600 text-white px-6 py-3 rounded-full transition whitespace-nowrap">
+          Join our team
+        </a>
+      </div>
+      <div class="w-full flex justify-center">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl">
+          <!-- Person 1 -->
+          <div class="text-center p-4">
+            <img src="images/images (1).jfif"
+                 class="w-24 h-24 mx-auto rounded-full object-cover mb-3">
+            <h3 class="font-bold text-lg">Ahmed Ali</h3>
+            <p class="text-blue-600 text-sm">General Manager</p>
+            <p class="text-gray-500 text-sm mt-2">
+              Leads the company with a clear vision and strong leadership to achieve long-term success.
+            </p>
+          </div>
+          <!-- Person 2 -->
+          <div class="text-center p-4">
+            <img src="images/istockphoto-1437816897-612x612.jpg"
+                 class="w-24 h-24 mx-auto rounded-full object-cover mb-3">
+            <h3 class="font-bold text-lg">Sara Mohamed</h3>
+            <p class="text-blue-600 text-sm">Operations Manager</p>
+            <p class="text-gray-500 text-sm mt-2">
+              Oversees daily operations and ensures everything runs smoothly and efficiently.
+            </p>
+          </div>
+          <!-- Person 3 -->
+          <div class="text-center p-4">
+            <img src="images/images (2).jfif"
+                 class="w-24 h-24 mx-auto rounded-full object-cover mb-3">
+            <h3 class="font-bold text-lg">Omar Khaled</h3>
+            <p class="text-blue-600 text-sm">Project Manager</p>
+            <p class="text-gray-500 text-sm mt-2">
+              Manages projects from start to finish, ensuring quality and timely delivery.
+            </p>
+          </div>
+          <!-- Person 4 -->
+          <div class="text-center p-4">
+            <img src="images/front-view-business-woman-suit_23-2148603018.avif"
+                 class="w-24 h-24 mx-auto rounded-full object-cover mb-3">
+            <h3 class="font-bold text-lg">Mona Hassan</h3>
+            <p class="text-blue-600 text-sm">HR Manager</p>
+            <p class="text-gray-500 text-sm mt-2">
+              Handles recruitment and employee relations to build a strong and motivated team.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-gray-100 text-center ">
+      <div class="max-w-4xl mx-auto p-6 relative text-center">
+        <h2 class="lg:text-4xl md:text-2xl text-xl font-bold mb-6 leading-tight mt-[30px] p-4 mb-5">Our Evolution</h2>
+        <div class="absolute left-1/2 top-40 bottom-0 -translate-x-1/2 w-1 bg-blue-500"></div>
+        <!-- Item 1 -->
+        <div class="mb-10 flex justify-between items-center w-full">
+          <!-- Left -->
+          <div class="w-1/2 pr-8 text-right bg-white border rounded-2xl p-2">
+            <h3 class="font-bold text-lg">2012</h3>
+            <h3 class="bold text-xl">The Inception</h3>
+            <p class="text-gray-600">BlueTech founded and first project launched.</p>
+          </div>
+          <!-- Circle -->
+          <div class="w-6 h-6 bg-blue-500 rounded-full border-4 border-white z-10"></div>
+          <!-- Right -->
+          <div class="w-1/2"></div>
+        </div>
+        <!-- Item 2 -->
+        <div class="mb-10 flex justify-between items-center w-full ">
+          <div class="w-1/2"></div>
+          <div class="w-6 h-6 bg-blue-500 rounded-full border-4 border-white z-10"></div>
+          <div class="w-1/2 pl-8 text-left bg-white border rounded-2xl p-2">
+            <h3 class="font-bold text-lg">2015</h3>
+            <h3 class="bold text-xl">Expansion Phase</h3>
+            <p class="text-gray-600">Reached 50 employes and opened our frist international office in London</p>
+          </div>
+        </div>
+      
+        <!-- Item 3 -->
+        <div class="mb-10 flex justify-between items-center w-full">
+          <div class="w-1/2 pr-8 text-right bg-white border rounded-2xl p-2">
+            <h3 class="font-bold text-lg">2018</h3>
+            <h3 class="bold text-xl">Innovation Award</h3>
+            <p class="text-gray-600">Recognized as best cloud solution provider by TechGlobel</p>
+          </div>
+          <div class="w-6 h-6 bg-blue-500 rounded-full border-4 border-white z-10"></div>
+          <div class="w-1/2"></div>
+        </div>
+
+        <div class="mb-10 flex justify-between items-center w-full ">
+          <div class="w-1/2"></div>
+          <div class="w-6 h-6 bg-blue-500 rounded-full border-4 border-white z-10"></div>
+          <div class="w-1/2 pl-8 text-left bg-white border rounded-2xl p-2">
+            <h3 class="font-bold text-lg">2021</h3>
+            <h3 class="bold text-xl">Enterprise Shift</h3>
+            <p class="text-gray-600">Secured our frist Fortune 100 partiner, managing globel cyber infrastructure.</p>
+          </div>
+        </div>
+
+        <div class="mb-10 flex justify-between items-center w-full">
+          <div class="w-1/2 pr-8 text-right bg-white border rounded-2xl p-2">
+            <h3 class="font-bold text-lg">2024</h3>
+            <h3 class="bold text-xl">Ai Intergration</h3>
+            <p class="text-gray-600">Launched our property AI-drivin DevOps platform></p>
+          </div>
+          <div class="w-6 h-6 bg-blue-500 rounded-full border-4 border-white z-10"></div>
+          <div class="w-1/2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-blue-600 text-center h-[50vh]">
+      <h2 class="lg:text-4xl md:text-3xl text-2xl font-bold mb-6 leading-tight text-white lg:p-[20px]">Ready to Start Your Next Project ?</h2>
+      <p class="text-gray-200 p-4">Lorem cing elit. Autem sit sequi voluptatem enim harum facere dicta, nam corporis mollitia eligendi vero? Nam quidem velit quas veritatis quaerat rerum rem molestiae!</p>
+      <div class="m-20">
+        <a href="contact.html" class="bg-white px-3 py-4 text-blue-600 hover:bg-blue-200 rounded-2xl border">Contact Us Now</a>
+        <a href="service.html" class="bg-white px-3 py-4 text-blue-600 hover:bg-blue-200 rounded-2xl border">View our serviecs</a>
+      </div>
+    </section>
+    <footer class="bg-gray-100 py-10 px-6">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+      
+        <!-- Column 1 -->
+        <div>
+          <div class="text-blue-700 font-bold text-xl">
+            <i class="fa-solid fa-globe"></i>
+            <span>BlueTech</span>
+          </div>
+          <p class="text-gray-400">
+          We provide modern technology solutions to help your business grow and succeed.
+          </p>
+         </div>
+        
+        <!-- Column 2 -->
+        <div>
+          <h3 class="text-blue-500 font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+            <li><a href="about.html" class="hover:text-blue-400">About</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">Services</a></li>
+            <li><a href="projects.html" class="hover:text-blue-400">Projects</a></li>
+            <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+          </ul>
+        </div>
+      
+        <!-- Column 3 -->
+        <div>
+          <h3 class="text-blue-500 font-semibold mb-4">Services</h3>
+          <ul class="space-y-2">
+            <li><a href="service.html" class="hover:text-blue-400">Web Development</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">Cloud Solutions</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">Cyber Security</a></li>
+            <li><a href="service.html" class="hover:text-blue-400">AI Solutions</a></li>
+            <li><a href="contact.html" class="hover:text-blue-400">Our Prtoflio</a></li>
+
+          </ul>
+        </div>
+      
+        <!-- Column 4 -->
+        <div>
+          <h3 class="text-blue-500 font-semibold mb-4">Contact</h3>
+          <p>Email: info@bluetech.com</p>
+          <p>Phone: +20 123 456 789</p>
+        
+          <!-- Social Icons -->
+          <div class="flex gap-4 mt-4 text-xl">
+            <i class="fa-brands fa-facebook hover:text-blue-500"></i>
+            <i class="fa-brands fa-instagram hover:text-pink-400"></i>
+            <i class="fa-brands fa-twitter hover:text-blue-500"></i>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom -->
+      <div class="text-center text-gray-500 mt-8">
+        © 2026 BlueTech. All rights reserved.
+      </div>
+    </footer>
+    <script>
+        // mobile menu
+        const menuBtn = document.getElementById("menuBtn")
+        const mobileMenu = document.getElementById("mobileMenu")
+        
+        menuBtn.onclick = () => {
+        mobileMenu.classList.toggle("hidden")
+        }
+    </script>
+    <!-- زرار Scroll to Top -->
+    <button id="scrollTopBtn" class="fixed bottom-5 right-5 bg-blue-700 text-white p-4 rounded-full shadow-lg hover:bg-blue-800 transition hidden z-50">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const scrollBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = () => {
+          if(document.body.scrollTop > 100 || document.documentElement.scrollTop > 100){
+            scrollBtn.classList.remove("hidden");
+          } else {
+            scrollBtn.classList.add("hidden");
+          }
+        };
+        scrollBtn.onclick = () => {
+          window.scrollTo({top:0, behavior:"smooth"});
+        };
+    </script>
+</body>
+</html>
