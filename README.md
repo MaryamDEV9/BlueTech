@@ -3,7 +3,7 @@
 ##  Project Description
 This is a responsive website built using Tailwind CSS to showcase a technology company.
 
-##screenshot:
+## screenshot
 images/Screenshot 2026-03-26 104932.png
 
 ##  Live Demo
