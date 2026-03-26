@@ -4,8 +4,7 @@
 This is a responsive website built using Tailwind CSS to showcase a technology company.
 
 ## 🚀 Live Demo
-https://github.com/MaryamDEV9/BlueTech
-
+https://maryamdev9.github.io/BlueTech/
 ## 🛠 Technologies Used
 - HTML
 - Tailwind CSS
